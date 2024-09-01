@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .hero-bg {
+            background-image: url('https://cdn.prod.website-files.com/6344c9cef89d6f2270a38908/653c5395a20cd20e8f4fb7b5_Freelance%20Software%20Developer%20Everything%20You%20Need%20To%20Know.webp');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+    <Script>
+        // app.js
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Your message has been sent!');
+        });
+    </Script>
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+    <!-- Header -->
+    <header class="bg-gray-900 text-white">
+        <nav class="container mx-auto flex items-center justify-between p-6">
+            <a href="#" class="text-2xl font-bold">My Portfolio</a>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="hover:text-gray-400">Home</a></li>
+                <li><a href="#about" class="hover:text-gray-400">About</a></li>
+                <li><a href="#projects" class="hover:text-gray-400">Projects</a></li>
+                <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg h-96 flex items-center justify-center text-center text-white">
+        <div class="bg-black bg-opacity-50 p-8 rounded-lg">
+            <h1 class="text-4xl font-bold mb-4">Welcome to My Portfolio</h1>
+            <p class="text-lg mb-6">I am a Pranjal Dey a developer showcasing my skills and projects.</p>
+            <a href="#contact" class="bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-lg">Contact Me</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">About Me</h2>
+            <p class="text-lg mb-6">I am a developer with a strong passion for creating efficient and innovative solutions. I specialize in web development, and I am skilled in various programming languages and frameworks.</p>
+            <img src="data:image/png;base64,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"
+                alt="Profile" class="mx-auto rounded-full mb-4">
+            <p>With a background in computer science, I have worked on numerous projects ranging from small websites to complex applications. My goal is to constantly learn and apply new technologies to solve real-world problems.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Skills & Technologies</h2>
+            <p class="text-lg mb-6">Here are some of the programming languages, frameworks, and tools I am skilled in:</p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <!-- Programming Languages -->
+                <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-xs">
+                    <h3 class="text-xl font-semibold mb-4">Programming Languages</h3>
+                    <ul class="list-disc list-inside">
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>Php</li>
+                        <li>C</li>
+                    </ul>
+                </div>
+                <!-- Frameworks -->
+                <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-xs">
+                    <h3 class="text-xl font-semibold mb-4">Frameworks</h3>
+                    <ul class="list-disc list-inside">
+                        <li>React</li>
+                        <li>HTML</li>
+                        <li>UI/UX</li>
+
+                    </ul>
+                </div>
+                <!-- Tools -->
+                <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-xs">
+                    <h3 class="text-xl font-semibold mb-4">Tools & Technologies</h3>
+                    <ul class="list-disc list-inside">
+                        <li>Git & GitHub</li>
+                        <li>Firebase</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-gray-200">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">My Projects</h2>
+            <div class="flex flex-wrap justify-center gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-xs">
+                    <img src="https://media.licdn.com/dms/image/D5612AQFTmcACrORSuA/article-cover_image-shrink_720_1280/0/1693504287163?e=2147483647&v=beta&t=DLRTCBRcdKLWHieNejlWUVaVFqTJ6IFJTnTWvsVVF80" alt="Project 1" class="w-full h-32 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-4">Weather App(web-app)</h3>
+                    <p>A brief description of the project. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ut ratione. In minima magni voluptatem sapiente cupiditate consectetur quibusdam aliq...</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-xs">
+                    <img src="https://5.imimg.com/data5/SELLER/Default/2020/9/HI/PO/EE/6668018/e-commerce-solutions-500x500.jpg" alt="Project 2" class="w-full h-32 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-4">E-Commerce App</h3>
+                    <p>A brief description of the project. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, voluptate vel repellat cumque officiis repudiandae ea velit ipsum...</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-xs">
+                    <img src="https://www.timechecksoftware.com/wp-content/uploads/2015/03/time-attendance-employee-management.jpg" alt="Project 3" class="w-full h-32 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-4">Employees Management Project</h3>
+                    <p>A brief description of the project. This project demonstrates my expertise in working with modern web technologies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Contact Me</h2>
+            <p class="text-lg mb-6">Feel free to reach out to me for any inquiries or collaborations. I look forward to connecting with you!</p>
+            <form id="contact-form" class="space-y-4">
+                <input type="text" id="name" placeholder="Your Name" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                <input type="email" id="email" placeholder="Your Email" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                <textarea id="message" rows="4" placeholder="Your Message" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                <button type="submit" class="w-full py-3 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 by pranjal dey. All rights reserved.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="https://github.com" target="_blank" class="text-gray-400 hover:text-gray-300"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com" target="_blank" class="text-gray-400 hover:text-gray-300"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com" target="_blank" class="text-gray-400 hover:text-gray-300"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
